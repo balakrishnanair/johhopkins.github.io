@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(226, 226, 225);
+}
+
+section {
+  border: 2px black solid;
+  width: 31%;
+  float: left;
+  position: relative;
+  padding: 16px;
+  padding-top: 60px;
+  margin:  10px;
+  color: black;
+  background-color: rgb(190, 190, 190);
+}
+
+
+
+p {
+  text-align: center;
+  margin-top:  20px;
+  
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+section.first > span {
+  background-color:#FF69B4;
+}
+section.second > span {
+  background-color: rgb(255, 37, 10);
+}
+section.third > span {
+  background-color: #FFFF00;
+}
+
+span p.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+span {
+  border: 1px solid black;
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+}
+
+/* Media Queires */
+/* Destop */
+/* 992px */
+
+/* Tablet */
+/* 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.first {
+    width: 47%;
+    padding: 16px;
+    top:  20px;
+
+  }
+
+  section.second {
+    width: 47%;
+    padding: 16px;
+     top:  20px;
+
+  }
+  section.third {
+    width: 100%;
+    padding: 16px;
+     top:  20px;
+
+    /* margin-top: 20px; */
+  }
+
+  p {
+    text-align: center;
+     margin-top:  40px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.first {
+    width: 100%;
+  }
+
+  section.second {
+    width: 100%;
+  }
+  section.third {
+    width: 100%;
+    
+  }
+}
